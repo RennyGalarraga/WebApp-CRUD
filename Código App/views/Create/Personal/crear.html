@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="js/crearUno.js"></script>
+    <title>CRUD</title>
+  </head>
+
+  <body>
+    <h1 class="titulo">CREAR NUEVO</h1>
+    <button class="opciones" id="back">Volver Atrás</button>
+
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Cédula</th>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Cumpleaños</th>
+          <th>Género</th>
+          <th>Teléfono</th>
+          <th>Rol</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+        <!-- Las filas con los datos de la BD irán aquí -->
+        <form id="formulario">
+            <td></td>
+            <td><input type="text" id="n_cedula" name="cedula" required></td>
+            <td><input type="text" id="n_nombre" name="nombre" required></td>
+            <td><input type="text" id="n_apellido" name="apellido" required></td>
+            <td><input type="date" id="n_cumpleaños" name="cumpleaños" min="1922-01-01" max="2022-12-31"></td>
+            <td>
+                <select id="n_genero" name="genero" required>
+                    <option selected="selected" disabled>Seleccionar</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </td>
+            <td><input type="tel" id="n_telefono" name="telefono" required></td>
+            <td><input type="text" id="n_rol" name="rol" required></td>
+            <td><input type="submit" value="Guardar" id="guardar"></td>
+        </form>
+      </tbody>
+    </table>
+  </body>
+</html>

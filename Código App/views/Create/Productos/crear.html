@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="js/crearUno.js"></script>
+    <title>CRUD</title>
+  </head>
+
+  <body>
+    <h1 class="titulo">CREAR NUEVO</h1>
+    <button class="opciones" id="back">Volver Atrás</button>
+
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Código</th>
+          <th>Descripción</th>
+          <th>Foto</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+        <!-- Las filas con los datos de la BD irán aquí -->
+        <form id="formulario">
+          <td></td>
+          <td><input type="text" id="n_nombre" name="nombre" required></td>
+          <td><input type="text" id="n_codigo" name="codigo" required></td>
+          <td><input type="text" id="n_descripcion" name="descripcion" required></td>
+          <td><input type="file" id="n_foto" name="foto" required></td>
+
+          <td><input type="submit" value="Guardar" id="guardar"></td>
+      </form>
+      </tbody>
+    </table>
+  </body>
+</html>

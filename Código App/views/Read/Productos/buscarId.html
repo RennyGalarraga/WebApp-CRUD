@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="js/buscarId.js"></script>
+    <title>CRUD</title>
+  </head>
+
+  <body>
+    <h1 class="titulo">BUSCAR POR ID</h1>
+    <div class="opciones">
+      <form id="form" class="opciones">
+        <label for="id"></label>
+        <input type="search" id="id" name="id" placeholder="Ingresa el ID" required>
+        <br>
+        <button id="buscar" >Buscar</button>
+     </form>
+    </div>
+    <button id="back">Volver Atrás</button>
+
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Código</th>
+          <th>Descripción</th>
+          <th>Foto</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+        <!-- Las filas con los datos de la BD irán aquí -->
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+*NO OLVIDAR DESCARGAR DEPENDENCIAS*
+
+NodeJS
+18.12.1 LTS
+
+pg
+8.8.0
+
+PostgreSQL
+15.1
+
+PEMHTTPD de PostgreSQL o cualquier otro software como Xampp
+
+Express
+4.18.2
+
+Sequelize
+6.26.0
+
